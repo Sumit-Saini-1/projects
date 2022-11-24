@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Pomodoro Clock</title>
+    <link href="pomodoro.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <svg width="220" height="250" >
+        <path id="sqr" d="M 15 15 m 95 0 l -95 0 l 0 184.5 l 190 0 l 0 -184.5 l -95 0" />
+      </svg>
+      <div id="time" >
+        <span id="minute">00</span>:<span id="second">00</span>
+      </div>
+      <div id="title" class="title">Session</div>
+      <div class="control">
+        <div class="control1">
+          <div class="conttitle">
+            Session time
+          </div>
+          <div id="sestime" class="sestime">
+            00 min
+          </div>
+          <div class="sescontrol">
+            <button id="sdecbt" onclick="decses()" disabled>-</button>
+            <button id="sincbt" onclick="incses()">+</button>
+          </div>
+        </div>
+        <div class="control1">
+          <div class="conttitle">
+            Break time
+          </div>
+          <div id="breaktime" class="breaktime">
+            00 min
+          </div>
+          <div class="breakcontrol">
+            <button id="bdecbt" onclick="decbr()" disabled>-</button>
+            <button id="bincbt" onclick="incbr()">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="cntrlbtn">
+        <button id="stp" onclick="start()">Start</button>
+        <button onclick="reset()">Reset</button>
+      </div>
+    </div>
+    <script src="pomodoro.js"></script>
+  </body>
+</html>

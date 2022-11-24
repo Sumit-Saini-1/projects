@@ -1,0 +1,41 @@
+  body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap:4rem; */
+    padding: 5rem;
+    /*width: 593px;
+    height: 545px;*/
+  }
+  .time{
+    color: #df6e3c;
+    font-size: 4rem;
+  }
+  .button{
+    display: flex;
+    
+  }
+  .button button{
+    border:2px solid black;
+    background: hsl(0deg 0% 21%);
+    color: hsl(0deg 0% 73%);
+    padding: 2em;
+    border-radius: 50%;
+    box-shadow: 2px 2px 0px hsl(0deg 0% 21%),-2px -2px 0px hsl(0deg 0% 21%);
+    margin: 4rem;
+    cursor: pointer;
+  }
+  li{
+    border-top: 0.1px solid hsl(0deg 0% 20%);
+    border-bottom: 0.1px solid hsl(0deg 0% 20%);
+    padding: 10px;
+    color: hsl(0deg 0% 40%);
+  }

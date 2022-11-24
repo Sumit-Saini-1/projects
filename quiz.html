@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>
+      Quiz Module
+    </title>
+    <link href="quiz.css" type="text/css" rel="stylesheet">
+  </head>
+  <body onload="setque()">
+    <div class="head" id="head">
+      Quiz
+    </div>
+    <div id="last"></div>
+    <div class="main" id="main">
+      <div class="que" id="que"></div>
+      <div class="opt" id="opt">
+        <input type="radio" name="option" id="A" class="rad" value="A"><label for="A" id="LA"></label><br>
+        <input type="radio" name="option" id="B" class="rad" value="B"><label for="B" id="LB"></label><br>
+        <input type="radio" name="option" id="C" class="rad" value="C"><label for="C" id="LC"></label><br>
+        <input type="radio" name="option" id="D" class="rad" value="D"></label><label for="D" id="LD"><br>
+      </div>
+      <div id="result"></div>
+      <div><button class="btn" onclick="check()" id="btn" >Submit</button></div>
+    </div>
+     
+    <script src="quiz.js"></script>
+  </body>
+</html>

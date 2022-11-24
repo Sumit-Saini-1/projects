@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>
+      Assignment - StopWatch 
+    </title>
+    <link href="stopwatch.css" rel="stylesheet">
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="time">
+        <label id="tim"><span id="minute">00</span>:<span id="second">00</span>:<span id="msec">00</span></label>
+      </div>
+      <div>
+        <div class="button">
+          <button id="lbtn" onclick="LapReset()" disabled>Lap</button>
+          <button id="stbtn" onclick="stopwatch()">Start</button>
+        </div>
+        <div class="lap" >
+          <ul id="list">
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="stopwatch.js"></script>
+  </body>
+</html>
